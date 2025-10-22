@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>E-Tech Gadgets — Your Plug for Premium Accessories</title>
+  <meta name="description" content="E-Tech Gadgets — Phone accessories, chargers, cases, earbuds, power banks. Order via WhatsApp." />
+  <style>
+    :root{
+      --bg:#0b0d0e;
+      --card:#141618;
+      --accent:#0ea5ff;
+      --muted:#9aa4ad;
+      --glass: rgba(255,255,255,0.03);
+      --radius:12px;
+      --maxw:1100px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#060708 0%, #0f1113 100%);color:#fff}
+    .wrap{max-width:var(--maxw);margin:30px auto;padding:28px}
+
+    header{display:flex;align-items:center;gap:18px}
+    .logo{display:flex;align-items:center;gap:14px}
+    .logo-svg{width:68px;height:68px;flex:0 0 68px}
+    .brand h1{margin:0;font-size:28px;letter-spacing:2px}
+    .brand p{margin:0;color:var(--muted);font-size:13px}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;margin-top:26px;align-items:center}
+    .hero-card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:16px;padding:28px}
+    .tag{display:inline-block;padding:8px 12px;background:rgba(14,165,255,0.12);color:var(--accent);border-radius:999px;font-weight:600;font-size:13px}
+    .hero h2{font-size:34px;margin:12px 0}
+    .hero p{color:var(--muted);line-height:1.6}
+    .cta-row{margin-top:18px;display:flex;gap:12px}
+    .btn{background:var(--accent);color:#061018;padding:12px 16px;border-radius:10px;font-weight:700;border:0;cursor:pointer;box-shadow:0 6px 18px rgba(14,165,255,0.08);transition:all .22s ease}
+    .btn.alt{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#fff}
+
+    .preview{background:var(--card);border-radius:12px;padding:18px;min-height:180px;display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center}
+    .preview img{max-width:100%;height:120px;object-fit:contain}
+
+    .section{margin-top:34px}
+    h3.section-title{margin:0 0 14px 0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .product{background:var(--card);padding:12px;border-radius:12px;display:flex;flex-direction:column;gap:10px;align-items:center}
+    .product img{width:100%;height:160px;object-fit:cover;border-radius:10px}
+    .product .name{font-weight:700}
+    .product .price{color:var(--accent);font-weight:800}
+    .product .order{margin-top:auto;width:100%;display:flex;gap:8px;flex-direction:column;align-items:stretch}
+
+    /* Button styles with neon glow on hover */
+    .action-row{display:flex;gap:8px;flex-wrap:wrap}
+    .action-btn{flex:1;padding:10px 12px;border-radius:10px;border:0;font-weight:700;cursor:pointer;background:#0e1113;color:#e6f7ff;position:relative;transition:transform .15s ease,box-shadow .15s ease}
+    .action-btn.copy{background:#22313f}
+    .action-btn.ussd{background:#2b2b3a}
+    .action-btn.pay{background:linear-gradient(90deg,var(--accent),#7c3aed);color:#061018}
+    .action-btn.whatsapp{background:#25D366;color:#061018}
+
+    .action-btn:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(14,165,255,0.12),0 0 30px rgba(14,165,255,0.07)}
+
+    footer{margin-top:36px;padding:18px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);display:flex;justify-content:space-between;align-items:center}
+    .contacts{display:flex;gap:12px;align-items:center}
+    .contact-item{display:flex;gap:8px;align-items:center}
+    .icon{width:36px;height:36px;display:inline-grid;place-items:center;border-radius:8px;background:rgba(255,255,255,0.03)}
+
+    .whatsapp{position:fixed;right:18px;bottom:18px;background:#25d366;border-radius:999px;padding:14px;box-shadow:0 8px 24px rgba(0,0,0,0.4);z-index:60}
+    .whatsapp a{color:#061018;font-weight:800;text-decoration:none}
+
+    @media(max-width:980px){ .hero{grid-template-columns:1fr} .grid{grid-template-columns:repeat(2,1fr)} }
+    @media(max-width:600px){ .wrap{padding:14px} .grid{grid-template-columns:1fr} .logo-svg{width:54px;height:54px} .hero h2{font-size:26px} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="E-Tech Gadgets logo">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1">
+              <stop offset="0" stop-color="#0ea5ff" />
+              <stop offset="1" stop-color="#7c3aed" />
+            </linearGradient>
+          </defs>
+          <rect width="100" height="100" rx="18" fill="#071018" />
+          <path d="M22 28h20a6 6 0 010 12H22v32" fill="none" stroke="url(#g1)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+          <circle cx="70" cy="50" r="16" stroke="url(#g1)" stroke-width="6" fill="none" />
+        </svg>
+        <div class="brand">
+          <h1>E‑TECH GADGETS</h1>
+          <p>Your Plug for Premium Accessories</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-card">
+        <span class="tag">Now Available</span>
+        <h2>Upgrade your device with premium accessories</h2>
+        <p>Deals with mobile phone gadgets and accessories, such as chargers, cables, phone cases, screen guards, earbuds, power banks, Bluetooth speakers, and more.</p>
+
+        <div class="cta-row">
+          <button class="btn" onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">Shop Now</button>
+          <button class="btn alt" onclick="window.open('https://www.instagram.com/elaneslakeside?igsh=ZGlxcmhobTVjcGNs','_blank')">View Instagram</button>
+        </div>
+
+        <div style="margin-top:16px;color:var(--muted);font-size:13px">Payment method: <strong>Opay 8053108219 — Aderanti Olamilekan Timothy</strong></div>
+      </div>
+
+      <div class="preview">
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=60" alt="preview" />
+        <div style="color:var(--muted);font-size:13px">Tap any product to order via WhatsApp or use the payment buttons.</div>
+      </div>
+    </section>
+
+    <section id="shop" class="section">
+      <h3 class="section-title">Featured Products</h3>
+      <div class="grid" id="productGrid"></div>
+    </section>
+
+    <footer>
+      <div>
+        <strong>E‑Tech Gadgets</strong><br />
+        <span style="color:var(--muted);font-size:13px">Deals with phone accessories — chargers, cables, cases, earbuds, power banks &amp; more.</span>
+      </div>
+      <div class="contacts">
+        <div class="contact-item"><div class="icon">📞</div><div>07080318149</div></div>
+        <div class="contact-item"><div class="icon">✉️</div><div>e45395401@gmail.com</div></div>
+        <a class="social" href="https://www.instagram.com/elaneslakeside?igsh=ZGlxcmhobTVjcGNs" target="_blank">Instagram</a>
+      </div>
+    </footer>
+  </div>
+
+  <div class="whatsapp"><a href="https://wa.me/2347080318149?text=Hi%20E-Tech%20Gadgets!%20I%20want%20to%20order%20a%20product." target="_blank">💬 WhatsApp</a></div>
+
+  <script>
+    // Product data (sample)
+    const PRODUCTS = [
+      {id:1,name:'USB-C Fast Charger', price:3500, img:'https://images.unsplash.com/photo-1585386959984-a4155229b3fb?auto=format&fit=crop&w=800&q=60'},
+      {id:2,name:'Wireless Earbuds (TWS)', price:8000, img:'https://images.unsplash.com/photo-1585386959984-a4155229b3fb?auto=format&fit=crop&w=800&q=60'},
+      {id:3,name:'Shockproof Phone Case', price:2500, img:'https://images.unsplash.com/photo-1616596873046-6d9b9f4f8a5e?auto=format&fit=crop&w=800&q=60'},
+      {id:4,name:'Portable Power Bank 10,000mAh', price:6500, img:'https://images.unsplash.com/photo-1580894894515-8d3b1d3a1b7f?auto=format&fit=crop&w=800&q=60'},
+      {id:5,name:'Tempered Glass Screen Guard', price:1200, img:'https://images.unsplash.com/photo-1585386959984-a4155229b3fb?auto=format&fit=crop&w=800&q=60'},
+      {id:6,name:'Bluetooth Speaker Mini', price:5400, img:'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=800&q=60'}
+    ];
+
+    const OPAY_ACCOUNT = {
+      provider:'Opay',
+      account:'8053108219',
+      name:'Aderanti Olamilekan Timothy'
+    };
+
+    function formatAmount(n){ return Number(n).toLocaleString(); }
+    function plainAmount(n){ return String(n).replace(/,/g,''); }
+
+    function renderProducts(){
+      const grid = document.getElementById('productGrid');
+      PRODUCTS.forEach(p=>{
+        const el = document.createElement('div'); el.className='product';
+        el.innerHTML = `
+          <img src="${p.img}" alt="${p.name}" />
+          <div class="name">${p.name}</div>
+          <div class="price">₦${formatAmount(p.price)}</div>
+          <div class="order">
+            <div class="action-row">
+              <button class="action-btn whatsapp" onclick="orderWhatsApp(${p.id})">Order via WhatsApp</button>
+              <button class="action-btn copy" onclick="copyAccount()">Copy Account Details</button>
+              <button class="action-btn ussd" onclick="copyUSSD(${p.price})">Copy USSD Code</button>
+              <button class="action-btn pay" onclick="payWithOpay(${p.price})">Pay with Opay</button>
+            </div>
+          </div>
+        `;
+        grid.appendChild(el);
+      });
+    }
+
+    function orderWhatsApp(id){
+      const p = PRODUCTS.find(x=>x.id===id);
+      const phone = '2347080318149';
+      const text = encodeURIComponent(`Hi E-Tech Gadgets! I want to order: ${p.name} (₦${formatAmount(p.price)}). Please send payment instructions.`);
+      const url = `https://wa.me/${phone}?text=${text}`;
+      window.open(url,'_blank');
+    }
+
+    // Copy Account details
+    function copyAccount(){
+      const text = `${OPAY_ACCOUNT.provider} - ${OPAY_ACCOUNT.account} - ${OPAY_ACCOUNT.name}`;
+      navigator.clipboard.writeText(text).then(()=>{
+        toast('Account details copied to clipboard');
+      });
+    }
+
+    // Copy USSD code using format *955*ACCOUNT*AMOUNT#
+    function copyUSSD(amount){
+      const num = plainAmount(amount);
+      const ussd = `*955*${OPAY_ACCOUNT.account}*${num}#`;
+      navigator.clipboard.writeText(ussd).then(()=>{
+        toast('USSD payment code copied. Paste in dialer to pay.');
+      });
+    }
+
+    // Open Opay page in new tab (Opay homepage)
+    function payWithOpay(amount){
+      // We open Opay homepage — users then follow to pay to the account
+      const opayUrl = 'https://www.opay.com/';
+      window.open(opayUrl,'_blank');
+      toast('Opening Opay. Complete payment and transfer to the account provided.');
+    }
+
+    // small toast function
+    function toast(msg){
+      const t = document.createElement('div');
+      t.textContent = msg;
+      Object.assign(t.style,{position:'fixed',left:'50%',bottom:'40px',transform:'translateX(-50%)',background:'#0e1113',padding:'10px 16px',borderRadius:'8px',boxShadow:'0 6px 20px rgba(0,0,0,0.6)',color:'#dff6ff',zIndex:9999});
+      document.body.appendChild(t);
+      setTimeout(()=>{ t.style.opacity='0'; t.addEventListener('transitionend',()=>t.remove()) },2200);
+    }
+
+    renderProducts();
+  </script>
+</body>
+</html>
